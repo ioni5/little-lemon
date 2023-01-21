@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Little Lemon</title>
+    <meta name="author" content="Little Lemon Restaurant">
+    <meta name="description" content="A family-owned Mediterranean restaurant">
+    <meta property="og:title" content="Little Lemon Restaurant">
+    <meta property="og:type" content="website">
+    <meta property="og:description" content="A family-owned Mediterranean restaurant, inspired by Italian, Greek and Turkish culture, with a menu of 12 to 15 items that rotate according to the season.">
+    <meta property="og:url" content="https://ioni5.github.io/little-lemon/">
+    <meta property="og:image" content="./images/Asset 16@4x.png">
+    <link rel="stylesheet" href="./css/styles.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300;0,400;0,500;0,600;0,700;0,800;1,300;1,400;1,500;1,600;1,700;1,800&display=swap" rel="stylesheet">
+</head>
+<body>
+    <header>
+        <img class="logo" src="./images/Asset 16@4x.png">
+        <img id="hamburger" src="./images/Hamburger_icon.png">
+    </header>
+    <nav>
+        <ul>
+            <li><a href="#">Home</a></li>
+            <li><a href="#">Menu</a></li>
+            <li><a href="#">Book</a></li>
+            <li><a href="#">About</a></li>
+        </ul>
+    </nav>
+    <main>
+        <section>
+            <article class="banner">
+                <h1>30% Off This Weekend</h1>
+                <p>Lorem, ipsum dolor sit amet. Incidunt inventore expedita obcaecati error, vero deserunt maxime a est omnis!, voluptatibus numquam!</p>
+            </article>
+        </section>
+        <section>
+            <article>
+                <h2>Our New Menu</h2>
+                <img src="./images/original-menu.jpg" alt="">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt inventore expedita obcaecati error in eveniet asperiores accusantium, deleniti accusamus natus vero dicta deserunt maxime a est omnis! Quod, voluptatibus numquam!</p>
+                <a href="#">See our new menu</a>
+            </article>
+            <article>
+                <h2>Book a Table</h2>
+                <img src="./images/table.jpg" alt="">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt inventore expedita obcaecati error in eveniet asperiores accusantium, deleniti accusamus natus vero dicta deserunt maxime a est omnis! Quod, voluptatibus numquam!</p>
+                <a href="#">Book your table now</a>
+            </article>
+            <article>
+                <h2>Opening Hours</h2>
+                <img src="./images/hours.jpg" alt="">
+                <p>Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt inventore expedita obcaecati error in eveniet asperiores accusantium, deleniti accusamus natus vero dicta deserunt maxime a est omnis! Quod, voluptatibus numquam!</p>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <div>
+            <img class="logo" src="./images/Asset 18@4x.png" alt="">
+        </div>
+        <div>Copyright Little Lemon @2023</div>
+    </footer>
+    <script>
+        const openMenu = () => {
+            document.querySelector("nav")
+                .classList.toggle("open");
+        }
+        document.querySelector("#hamburger")
+            .addEventListener("click", openMenu);
+    </script>
+</body>
+</html>
